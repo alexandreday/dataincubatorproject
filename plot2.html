@@ -10,19 +10,17 @@
 </head>
 <body>
     <p>Data Incubator project</p>
-    <p>Optimizing the demand for charging stations in populated area</p>
+    <p>Optimizing the demand for charging stations in populated areas</p>
     <p>Alexandre Day, July 23rd 2018</p>
-    <p>Figure 1: <br>
-        Map of the location of the current charging stations (red markers) in the Washington DC metro area
-        and sampled locations of rental apartements and houses (blue markers). Larger blue markers indicate an larger cost of
-        living (i.e. the cost per square-foot is higher). Larger red markers indicate accessibility to a greater number of chargers. 
-        Hover over the markers to visualize more information such as the price of rental, the number and type of chargers, etc.
+    <p>Figure 2: <br>
+        Using geospatial information from Figure 1, we can determine the likelihood that
+        a charging station is in the vicinity of a property with a certain valuation. 
+        Here we plot the number of charging stations within a mile of all properties with
+        a valuation under a specified value (x-axis). This emphasizes that weathly areas
+        are generally much more likely to have a charging station nearby.
     </p>
-    <p> Discussion: 
     </p>
-    <div id="plt1"></div>
-    <script src="plot1.js"></script>
-
+    <img src="correlation.png" alt="plot 2">
     <!-- <div id="plt2"></div> -->
 </body>
 </html>
