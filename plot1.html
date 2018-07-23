@@ -6,34 +6,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .title{
-            font-size: 15pt;
-        }
+
         .subtitle{
         font-weight: bold;
         font-size: 13pt;
         }
+
+        .title{
+            font-size: 20pt;
+        }
+        body,h1 {font-family: "Raleway", Arial, sans-serif}
+        h1 {letter-spacing: 6px}
+        .w3-row-padding img {margin-bottom: 12px}
         .bold{
             font-weight: bold;
+            color: darkcyan;
         }
-
     </style>
     <title>Map of stations and housing in the DC area</title>   
 </head>
 <body>
-    <p class="title">Data Incubator project</p>
-    <p class="subtitle">Optimizing the demand for charging stations in populated areas</p>
-    <p>Alexandre Day, July 23rd 2018</p>
-    <p>Figure 1 (interactive - hover and scroll !): <br>
-        Map of the location of the current charging stations (red markers) in the Washington DC metro area
-        along with sampled locations of rental apartements and houses (blue markers). Larger blue markers indicate a greater cost of
-        living (i.e. the cost per square-feet is higher). Larger red markers indicate accessibility to a greater number of charging stations. 
-        Hover over the markers to visualize more information such as the <span class="bold">price of rental, the number and type of chargers, etc</span>.
-    </p> 
-    </p>
-    <div id="plt1"></div>
-    <a href="index.html">Back to main page</a>
+    <div class="w3-content" style="max-width:1500px">
+        <p class="title w3">Data Incubator Project Proposal</p>
+        <div class="w3-content">
+            <p class="subtitle">Optimizing the demand for charging stations in populated areas</p>
+            <p><em>Alexandre Day, July 23rd 2018</em></p>
+            <p> <span class="bold"> Figure 1 (interactive - hover, drag and scroll  !):</span> <br>
+                Map of the location of the current charging stations (red markers) in the Washington DC metro area
+                along with sampled locations of rental apartements and houses (blue markers). Larger blue markers indicate a greater cost of
+                living (i.e. the cost per square-feet is higher). Larger red markers indicate accessibility to a greater number of charging stations. 
+                Hover over the markers to visualize more information such as the <span class="bold"><em>price of rental, the number and type of chargers, etc</span></span>.
+            </p> 
+            </p>
+        </div>
+        <div id="plt1"></div>
+        <a href="index.html">Back to main page</a>
+    </div>
     <script src="plot1.js"></script>
 
 </body>

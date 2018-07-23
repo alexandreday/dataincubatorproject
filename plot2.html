@@ -6,32 +6,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Location of stations in relation to rental properties</title>
     <style>
-        .title{
-            font-size: 15pt;
-        }
         .subtitle{
+        font-weight: bold;
+        font-size: 13pt;
+        }
+
+        .title{
+            font-size: 20pt;
+        }
+        body,h1 {font-family: "Raleway", Arial, sans-serif}
+        h1 {letter-spacing: 6px}
+        .w3-row-padding img {margin-bottom: 12px}
+        .bold{
             font-weight: bold;
-            font-size: 13pt;
+            color: darkcyan;
         }
 </style>
 </head>
 <body>
-    <p class="title">Data Incubator project</p>
-    <p class="subtitle">Optimizing the demand for charging stations in populated areas</p>
-    <p>Alexandre Day, July 23rd 2018</p>
-    <p>Figure 2: <br>
-        Using geospatial information from Figure 1, we can determine the likelihood that
-        a charging station is in the vicinity of a property with a certain valuation. 
-        Here we plot the number of charging (the average in fact) stations within a mile of all properties with
-        a valuation under a specified value (x-axis, cost/square-feet). This emphasizes that weathly areas
-        are generally much more likely to have a charging station nearby.
-    </p>
-    </p>
-    <!-- <img src="correlation.png" alt="plot 2"> -->
-    <a href="index.html">Back to main page</a>
-    <div id="plt2"></div>
+    <div class="w3-content" style="max-width:1500px">
+        <p class="title w3">Data Incubator Project Proposal</p>
+        <div class="w3-content">
+            <p class="subtitle">Optimizing the demand for charging stations in populated areas</p>
+            <p><em>Alexandre Day, July 23rd 2018</em></p>
+            <p> <span class="bold"> Figure 2 :</span> <br>
+                Using geospatial information from Figure 1, we can determine the likelihood that
+                a charging station is in the vicinity of a property with a certain valuation. 
+                Here we plot the number of charging (the average in fact) stations within a mile of all properties with
+                a valuation under a specified value (x-axis, cost/square-feet). This emphasizes that weathly areas
+                are generally much more likely to have a charging station nearby.
+            </p>
+            </p>
+            <!-- <img src="correlation.png" alt="plot 2"> -->
+            <a href="index.html">Back to main page</a>
+            <div id="plt2"></div>
+        </div>
+    </div>
     <script src="plot2.js"></script>
 </body>
 </html>

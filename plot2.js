@@ -13,7 +13,10 @@ function scatterplot(x, y, xlabel, ylabel){
         hovermode:'closest',
         xaxis:{title:xlabel},
         yaxis:{title:ylabel},
-        showlegend: false
+        showlegend: false,
+        font:{
+            family: "Raleway, Arial, sans-serif"
+        }
     }
         
     Plotly.newPlot('plt2', [trace1], layout);
