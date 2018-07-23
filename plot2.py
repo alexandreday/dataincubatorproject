@@ -42,8 +42,10 @@ for price in np.arange(0.25,6.0,0.1):
 
 pickle.dump(count_vs_price, open('count_vs_price.pkl','wb'))
 count_vs_price = pickle.load(open('count_vs_price.pkl','rb'))
+json.dump({'x':list(np.arange(0.25,6.0,0.1)),'y':list(count_vs_price)},open('plot2_data.json','w'))
+exit()
 plt.scatter(np.arange(0.25,6.0,0.1),count_vs_price)
-plt.xlabel('Cost of property (\$/square foot)')
+plt.xlabel('Cost of property (\$/square-feet)')
 plt.ylabel('Number of stations within a distance of 1 mile')
 #plt.show()
 plt.tight_layout()
