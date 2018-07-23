@@ -6,20 +6,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>First plot, location of stations</title>
+    <style>
+        .title{
+            font-size: 15pt;
+        }
+        .subtitle{
+        font-weight: bold;
+        font-size: 13pt;
+        }
+        .bold{
+            font-weight: bold;
+        }
+
+    </style>
+    <title>Map of stations and housing in the DC area</title>   
 </head>
 <body>
-    <p>Data Incubator project</p>
-    <p>Optimizing the demand for charging stations in populated area</p>
+    <p class="title">Data Incubator project</p>
+    <p class="subtitle">Optimizing the demand for charging stations in populated areas</p>
     <p>Alexandre Day, July 23rd 2018</p>
     <p>Figure 1 (interactive - hover and scroll !): <br>
         Map of the location of the current charging stations (red markers) in the Washington DC metro area
-        along with sampled locations of rental apartements and houses (blue markers). Larger blue markers indicate an larger cost of
-        living (i.e. the cost per square-foot is higher). Larger red markers indicate accessibility to a greater number of chargers. 
-        Hover over the markers to visualize more information such as the price of rental, the number and type of chargers, etc.
+        along with sampled locations of rental apartements and houses (blue markers). Larger blue markers indicate a greater cost of
+        living (i.e. the cost per square-feet is higher). Larger red markers indicate accessibility to a greater number of charging stations. 
+        Hover over the markers to visualize more information such as the <span class="bold">price of rental, the number and type of chargers, etc</span>.
     </p> 
     </p>
     <div id="plt1"></div>
+    <a href="index.html">Back to main page</a>
     <script src="plot1.js"></script>
+
 </body>
 </html>
