@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        .subtitle{
+        font-weight: bold;
+        font-size: 13pt;
+        }
+
+        .title{
+            font-size: 20pt;
+        }
+        body,h1 {font-family: "Raleway", Arial, sans-serif}
+        h1 {letter-spacing: 6px}
+        .w3-row-padding img {margin-bottom: 12px}
+        .bold{
+            font-weight: bold;
+            color: darkcyan;
+        }
+    </style>
+    <title>Map of stations and housing in the DC area</title>   
+</head>
+<body>
+    <div class="w3-content" style="max-width:1500px">
+        <div class="w3-content">
+            <p class="title">Data Incubator Project Proposal</p>
+            <p class="subtitle">Optimizing the deployment of EV charging stations in cities</p>
+            <p><em>Alexandre Day, August 8th 2018</em></p>
+            <p> <span class="bold"> Figure 1 - Geospatial location of charging stations in the DC metro area in relation to the cost of renting properties</span> </p> 
+            <div id="plt1" style="width: 1000px; height: 600px;"></div>
+            <p> <span class="bold"> Figure 2 -- </span> </p> 
+            <div id="plt2" style="width: 1000px; height: 600px;"></div>
+            <!-- <div id="plt2" style="width: 1000px; height: 600px;"></div> -->
+            <a href="index.html">Back to main page</a>
+        </div>
+    </div>
+    <script src="js/show_chargepoint.js"></script>
+    <script src="js/model.js"></script>
+    <!-- <script src="show_housing.js"></script> -->
+
+</body>
+</html>
